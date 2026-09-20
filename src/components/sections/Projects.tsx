@@ -40,7 +40,7 @@ export const Projects = () => {
               <div className="flex flex-wrap gap-2 mb-4">
                 {["Pentest", "Linux", "Segurança Ofensiva", "Relatório", "Análise de Vulnerabilidades"].map((tech, key) => (
                   <span key={key} className=" bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm transition
-                   hover:bg-blue-500/20 hover:-translate-y-0.5hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]">
+                   hover:bg-blue-500/20 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]">
                     {tech}
                   </span>
                 ))}
