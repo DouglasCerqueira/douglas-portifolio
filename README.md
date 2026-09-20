@@ -1,4 +1,4 @@
-# 💻 Douglas.tech — Portfólio Pessoal
+# 💻 Portfólio Pessoal
 
 Site de portfólio de **Douglas Alves Cerqueira**, profissional de TI formado em Análise e Desenvolvimento de Sistemas e estudante de Defesa Cibernética, com foco em **segurança da informação** (Red Team e Pentest) e desenvolvimento seguro.
 
