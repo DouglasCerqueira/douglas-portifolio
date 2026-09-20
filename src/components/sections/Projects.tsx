@@ -31,7 +31,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className=" glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30
+            <div className="glass p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30
             hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Laboratório de Pentest</h3>
               <p className="text-gray-400 mb-4">
