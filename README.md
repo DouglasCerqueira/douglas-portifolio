@@ -53,6 +53,3 @@ Site de portfólio de **Douglas Alves Cerqueira**, profissional de TI formado em
 ├── index.html
 ├── vite.config.ts
 └── package.json
-
-
-Sinta-se à vontade para abrir uma *issue* ou entrar em contato pelo [formulário do portfólio](https://DouglasCerqueira.github.io/douglas-portifolio/#contact).
