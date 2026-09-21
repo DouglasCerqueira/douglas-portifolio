@@ -9,7 +9,7 @@ export const Home = () => {
           bg-clip-text text-transparent leading-right">
             Olá. Eu sou o Douglas!
           </h1>
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
             Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou cursando Defesa Cibernética.
             Meu objetivo é melhorar a segurança e desenvolver códigos seguros.
           </p>

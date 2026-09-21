@@ -1,75 +1,55 @@
-# React + TypeScript + Vite
+# 💻 Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site de portfólio de **Douglas Alves Cerqueira**, profissional de TI formado em Análise e Desenvolvimento de Sistemas e estudante de Defesa Cibernética, com foco em **segurança da informação** (Red Team e Pentest) e desenvolvimento seguro.
 
-Currently, two official plugins are available:
+🔗 **Acesse online:** [douglascerqueira.github.io/douglas-portifolio](https://DouglasCerqueira.github.io/douglas-portifolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- **Tela de carregamento** com animação de digitação estilo terminal
+- **Navegação fixa** com menu responsivo para dispositivos móveis
+- **Animações de revelação** ao rolar a página (scroll reveal)
+- **Seções:** Home, Sobre Mim, Projetos e Contato
+- **Formulário de contato funcional**, com envio de e-mails via [EmailJS](https://www.emailjs.com/) (sem back-end próprio)
+- **Tema escuro** com destaque em azul/ciano, fontes *Space Grotesk* e *JetBrains Mono*
+- **Layout responsivo**, pensado para desktop e mobile
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Categoria | Ferramentas |
+| --- | --- |
+| Interface | React 19, TypeScript |
+| Build | Vite |
+| Estilo | Tailwind CSS 4 |
+| Contato | EmailJS |
+| Qualidade | ESLint, typescript-eslint |
+| Deploy | GitHub Pages (`gh-pages`) |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Estrutura do projeto
 
 ```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+├── public/                     # Favicon e ícones estáticos
+├── src/
+│   ├── components/
+│   │   ├── sections/
+│   │   │   ├── Home.tsx        # Apresentação
+│   │   │   ├── About.tsx       # Habilidades, formação e experiência
+│   │   │   ├── Projects.tsx    # Projetos em destaque
+│   │   │   └── Contact.tsx     # Formulário de contato (EmailJS)
+│   │   ├── LoadingScreen.tsx   # Tela de carregamento inicial
+│   │   ├── Navbar.tsx          # Barra de navegação
+│   │   ├── MobileMenu.tsx      # Menu para telas pequenas
+│   │   └── RevealOnScroll.tsx  # Animação ao rolar a página
+│   ├── App.tsx
+│   ├── index.css               # Tailwind + animações customizadas
+│   └── main.tsx
+├── index.html
+├── vite.config.ts
+└── package.json
