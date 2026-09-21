@@ -45,6 +45,10 @@ export const Projects = () => {
                   </span>
                 ))}
               </div>
+              <div className="flex justify-between items-center">
+                <a href="https://github.com/DouglasCerqueira/5PDM" className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                  View Project →
+                </a>
             </div>
           </div>
         </div>
